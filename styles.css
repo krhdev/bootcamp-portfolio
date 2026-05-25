@@ -1,0 +1,144 @@
+/* Global Styles */
+:root {
+  --bg-color: #0b1120;
+  --text-color: #000000;
+  --accent-color: #4c014e;
+  --surface-color: #111827;
+  --muted-color: #94a3b8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: linear-gradient(180deg, #ffffff 0%, #35012e 100%);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  float: left;
+  padding-right: 1rem;
+  border-radius: 25%;
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+.container {
+  width: min(1120px, 100% - 2rem);
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+header {
+  padding: 1.5rem 0;
+  background : #35012e;
+}
+
+header .brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+nav {
+  margin-top: 1rem;
+  display: block;
+  
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+nav li {
+  font-size: 0.95rem;
+}
+
+section {
+  margin: 3rem 0;
+}
+
+.hero {
+  display: grid;
+  gap: 1.5rem;
+  align-items: center;
+  grid-template-columns: 1.5fr 1fr;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 4vw, 4rem);
+  margin: 0;
+}
+
+.hero p {
+  max-width: 42rem;
+  color: var(--muted-color);
+}
+
+button,
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.85rem 1.4rem;
+  border: none;
+  border-radius: 999px;
+  background: var(--accent-color);
+  color: #0f172a;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+button:hover,
+.btn:hover {
+  background: #22d3ee;
+  transform: translateY(-1px);
+}
+
+.cards {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.card {
+  background: rgba(15, 23, 42, 0.85);
+  border: 1px solid rgba(148, 163, 184, 0.15);
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+
+.card h2 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+footer {
+  padding: 2rem 0;
+  text-align: center;
+  color: var(--muted-color);
+}
+
+@media (max-width: 840px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+}
