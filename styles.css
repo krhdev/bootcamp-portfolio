@@ -24,7 +24,6 @@ img {
   display: block;
   float: left;
   padding-right: 1rem;
-  border-radius: 25%;
 }
 
 a {
@@ -80,20 +79,40 @@ section {
 }
 
 .hero {
-  display: grid;
-  gap: 1.5rem;
+  background-image: url('assets/coding.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50vh; /* half screen height */
+}
+
+.hero-overlay {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* dark overlay over image */
+  display: flex;
   align-items: center;
-  grid-template-columns: 1.5fr 1fr;
+  justify-content: center;
 }
 
-.hero h1 {
-  font-size: clamp(2rem, 4vw, 4rem);
-  margin: 0;
+.hero-content {
+  text-align: center;
+  color: white;
 }
 
-.hero p {
-  max-width: 42rem;
-  color: var(--muted-color);
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+section#home {
+  margin-top: 0;
+  padding-top: 0;
 }
 
 button,
@@ -117,26 +136,10 @@ button:hover,
   transform: translateY(-1px);
 }
 
-.cards {
-  display: grid;
-  gap: 1.25rem;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-}
-
-.card {
-  background: rgba(15, 23, 42, 0.85);
-  border: 1px solid rgba(148, 163, 184, 0.15);
-  border-radius: 1rem;
-  padding: 1.5rem;
-}
-
-.card h2 {
-  margin-top: 0;
-  margin-bottom: 0.75rem;
-}
 
 footer {
-  padding: 2rem 0;
+  padding: 1.5rem 0;
+  background: #000000;
   text-align: center;
   color: var(--muted-color);
 }

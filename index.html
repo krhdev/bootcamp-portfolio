@@ -3,115 +3,102 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="styles.css">
   <title>My Portfolio</title>
 </head>
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-accent navbar-right navbar-brand">
-         <a class="navbar-brand" href="#home">
-      <img src="assets/k_h.jpg" alt="" width="30" height="24" class="d-inline-block align-text-top">
-      Welcome to My Step8Up Bootcamp Portfolio
-    </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation nav navbar-nav navbar-right">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" navbar-right nav navbar-nav id="navbarNav">
-    <ul class="nav navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#about">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#projects">Projects</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#contact">Contact</a>
-      </li>
-    </ul>
-  </div>
-
-    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-accent">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#home">
+          <img src="assets/k_h.jpg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+          My Step8Up Bootcamp Portfolio
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </header>
-  <main>
-    
-    <section id="home">
-      
-      <h2>Welcome to my portfolio! I'm excited to share my work and develop my skills further with you.</h1>
-    </section>
+    <!-- Hero Section -->
+<section id="home" class="hero">
+  <div class="hero-overlay">
+    <div class="hero-content">
+      <h4>Welcome to my portfolio! I'm excited to share my work and develop my skills further with you.</h1>
+      <p>Full Stack Developer | Tech Support</p>
+      <a href="#projects" class="btn btn-outline-light btn-lg mt-3">View My Work</a>
+    </div>
+  </div>
+</section> 
+
+<main class="container">
     <section id="about">
         <div>
+      
+      <img src="assets/k_h.jpg" style="border-radius: 25%;" width="200" height="200" alt="Kat" />
       <h2>About Me</h2>
-      <img src="assets/k_h.jpg" width="200" height="200" alt="Katie Hulse" />
-      <p>Hi! I'm Katie but you can call me Kat, a passionate web developer with a love for creating beautiful and functional websites. I have experience in HTML, CSS, JavaScript, React and various web development frameworks. I enjoy learning new technologies and am always looking for ways to improve my skills.</p>
+      <p>Hi! I'm Katie but you can call me Kat, a passionate web developer with a love for creating beautiful and functional websites. 
+        <br>
+        I have experience in HTML, CSS, JavaScript, React and various web development frameworks. 
+        <br>I enjoy learning new technologies and am always looking for ways to improve my skills.</p>
    </div>
    </section>
 
    <div class="container">
     <section padding-top="50px" id="projects">
         <div>
-      <h2>Projects</h2>
-      <div class="awesome-portfolio-area fix">
-    <div class="container">
-        <!-- section-heading start -->
-        <div class="row">
-            <div class="col-md-12">
-                <div class="section-heading">
-                    <h2>CHECK OUT THESE AWESOME <strong>PROJECTS</strong></h2>
-                
-                </div>
+      <h1>Projects</h1>
+     <h4>CHECK OUT THESE AWESOME <strong>PROJECTS</strong></h4>
+
+     <div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <img src="https://krh1.co.uk/wp-content/uploads/2024/01/starwarsflix.png" alt="">
+      <br />
+      <br>
+            <div class="info" mt-2>
+              &nbsp; <a href="https://krh1designs.github.io/StarWarsFlix/" target="_blank"><h3>Star Wars Flix</h3></a>
+                <p>A Netflix clone for Star Wars created with Tailwind CSS. I am a huge Star Wars fan and what better streaming site would there be just filled with Star Wars series and movies…… exactly, this had to be done. </p>
             </div>
         </div>
-        <!-- section-heading end -->
-    </div>
-    <!-- awesome-portfolio start -->
-    <div class="container awesome-portfolio">
+    <div class="col-sm">
+      <img src="https://krh1.co.uk/wp-content/uploads/2024/01/tictactoe-400x284.png" alt="">
+          <div class="info" mt-2>
         
-        <div class="awesome-portfolio-content" id="MixItUp68DC04">
-            <!-- single-awesome-portfolio start -->
-            <div class="single-awesome-portfolio mix all flat illustration" style="display: inline-block;">
-                <a href="https://krh1designs.github.io/StarWarsFlix/" target="_blank">
-                    <div class="awesome-img"><img src="https://krh1.co.uk/wp-content/uploads/2024/01/starwarsflix.png" alt=""></div>
-                    <div class="awesome-info">
-                        <h3>Star Wars Flix</h3>
-                        <p>A Netflix clone for Star Wars created with Tailwind CSS. I am a huge Star Wars fan and what better streaming site would there be just filled with Star Wars series and movies…… exactly, this had to be done. </p>
-                    </div>
-                </a>
-            </div>
-            <!-- single-awesome-portfolio end -->
-            <!-- single-awesome-portfolio start -->
-            <div class="single-awesome-portfolio mix all design branding" style="display: inline-block;">
-                <a href="https://kitkattoegame.surge.sh/" target="_blank">
-                    <div class="awesome-img"><img src="https://krh1.co.uk/wp-content/uploads/2024/01/tictactoe-400x284.png" alt=""></div>
-                    <div class="awesome-info">
-                        <h3>Tic Tac Toe</h3>
-                        <p>Learning React with React Hooks & Firebase</p>
-                    </div>
-                </a>
-            </div>
-            <!-- single-awesome-portfolio end -->
-            <!-- single-awesome-portfolio start -->
-            <div class="single-awesome-portfolio mix all flat illustration" style="display: inline-block;">
-                <a href="https://krh1designs.github.io/box-office/#/" target="_blank">
-                    <div class="awesome-img"><img src="https://krh1.co.uk/wp-content/uploads/2024/02/tvmaze-400x284.png" alt=""></div>
-                    <div class="awesome-info">
-                        <h3>TV Maze API Box Office</h3>
-                        <p>Created with up-to-date versions of React, React Hooks, Node.js, JavaScript, and Firebase.</p>
-                    </div>
-                </a>
-            </div>
-            <!-- single-awesome-portfolio end -->
-            
-        </div>
+            <a href="https://kitkattoegame.surge.sh/" target="_blank"><h3>Tic Tac Toe</h3></a>
+              <p>Learning React with React Hooks & Firebase</p>
+          </div>          
     </div>
-    <!-- awesome-portfolio end -->
+    <div class="col-sm">
+      <img src="https://krh1.co.uk/wp-content/uploads/2024/02/tvmaze-400x284.png" alt="">
+        <div class="info" mt-3>
+          <a href="https://krh1designs.github.io/box-office/#/" target="_blank"><h3>TV Maze API Box Office</h3></a>
+            <p>Created with up-to-date versions of React, React Hooks, Node.js, JavaScript, and Firebase.</p>
+        </div>      
+    </div>
+  </div>
 </div>
-</div>
-<script src="https://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+                
+               
+                
     </section>
     <section id="contact">
 <div class="row">
@@ -148,6 +135,12 @@
       </section>
       </div>
   </main>
+
+  
+  <!-- your page content -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
   <footer>
     <p>&copy; 2026 Katie. All rights reserved.</p>
   </footer>
