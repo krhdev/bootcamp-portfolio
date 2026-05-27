@@ -27,7 +27,7 @@ img {
 }
 
 a {
-  color: var(--accent-color);
+  color: #fffb00;
   text-decoration: none;
 }
 
@@ -58,7 +58,8 @@ header .brand {
 nav {
   margin-top: 1rem;
   display: block;
-  
+  position: sticky;
+  top: 0;
 }
 
 nav ul {
@@ -132,7 +133,7 @@ button,
 
 button:hover,
 .btn:hover {
-  background: #ffffff;
+  background: var(--muted-color);
   transform: translateY(-1px);
 }
 
