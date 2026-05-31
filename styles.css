@@ -5,6 +5,7 @@
   --accent-color: #4c014e;
   --surface-color: #111827;
   --muted-color: #94a3b8;
+  --warning-color: #f0740e;
 }
 
 * {
@@ -33,7 +34,7 @@ a {
 
 a:hover,
 a:focus {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .container {
@@ -117,7 +118,7 @@ section#home {
 }
 
 button,
-.btn {
+.btn1 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -125,7 +126,7 @@ button,
   border: none;
   border-radius: 999px;
   background: var(--accent-color);
-  color: #0f172a;
+  background:var(--warning-color);
   font-weight: 700;
   cursor: pointer;
   transition: transform 0.2s ease, background-color 0.2s ease;
